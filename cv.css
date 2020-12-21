@@ -1,0 +1,545 @@
+/*STYLES GENERAUX*/
+*{
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+
+
+@keyframes font_body_animation {
+  
+  0%  {background-position: 0 0;}
+  100%  {background-position: -100% 0;}
+}
+
+@keyframes font_headerfooter_animation {
+  
+    0%  {background-position: -100% 0;}
+    100%  {background-position: 0 0;}
+  }
+
+body{
+    background: url("https://image.freepik.com/vecteurs-libre/fond-sombre-basse-poly_1048-7971.jpg") #4f4f4f;
+    animation: font_body_animation 50s linear infinite;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.bio{
+    font-size: 1.7em;
+    line-height: 1.5em;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/*HEADER & FOOTER*/
+header, footer{
+    width: 100%;
+    padding: 20px 0px;
+    background: url("https://us.123rf.com/450wm/elvil/elvil1603/elvil160300045/54248959-indigo-blue-vintage-fond-d-%C3%A9cran-de-conception-de-motif-r%C3%A9p%C3%A9titif.jpg?ver=6") #4f4f4f;
+    animation: font_headerfooter_animation 70s linear infinite;
+    box-shadow: 0px 0px 15px #333;
+}
+header{
+    border-bottom: 2px solid #fff;
+    height: 120px;
+}
+header h1{
+    color: white;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    border-top: 2px solid #fff;
+}
+footer p{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+footer a{
+    color: #fff;
+}
+
+/*SECTIONS*/
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+section > div{
+    width: 90%;
+}
+
+/*SECTION INFOS*/
+.photo{
+    text-align: center;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+.prez{
+    border-bottom: 2px dashed #ccc;
+}
+.prez a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background-color: #EA0;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+}
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+}
+
+/*SECTION EXP ET FORMATION*/
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+}
+.exp-logo{
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+.exp-info{
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+.exp img{
+    width: 100%;
+}
+.exp h3{
+    font-size:  1.2em;
+}
+.exp h4{
+    font-size:  1em;
+    font-weight: normal;
+}
+
+/*SECTION COMPETENCES*/
+.h3gauche{
+    width: 90%;
+}
+.comp{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+.conteneur-barre{
+
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: grey;
+    border-bottom: 1px ridge grey;
+}
+
+
+
+
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+@keyframes Animate-HTML50 {
+    from {
+    width: 1px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-HTML50 {
+    from {
+    width: 1px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-HTML50 {
+    from {
+    width: 1px;
+}
+to {
+    width: 50%}
+}@-o-keyframes Animate-HTML50 {
+    from {
+    width: 1px;
+}
+to {
+    width: 50%}
+}
+.c50{
+    
+    width: 50%;
+    animation: Animate-HTML50 4s;
+    -webkit-animation: Animate-HTML50 4s;
+    -moz-animation: Animate-HTML50 4s;
+    -o-animation: Animate-HTML50 4s;
+    background-color:#ffd900;
+}
+
+@keyframes Animate-HTML75 {
+    from {
+    width: 1px;
+}
+to {
+    width: 75%}
+}@-webkit-keyframes Animate-HTML75 {
+    from {
+    width: 1px;
+}
+to {
+    width: 75%}
+}@-moz-keyframes Animate-HTML75 {
+    from {
+    width: 1px;
+}
+to {
+    width: 75%}
+}@-o-keyframes Animate-HTML75 {
+    from {
+    width: 1px;
+}
+to {
+    width: 75%}
+}
+.c75{
+    width: 75%;
+    
+    animation: Animate-HTML75 4s;
+    -webkit-animation: Animate-HTML75 4s;
+    -moz-animation: Animate-HTML75 4s;
+    -o-animation: Animate-HTML75 4s;
+    background-color: #6B8;
+}
+
+@keyframes Animate-HTML70 {
+    from {
+        width: 1px;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+@-webkit-keyframes Animate-HTML70 {
+    from {
+        width: 1px;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+@-moz-keyframes Animate-HTML70 {
+    from {
+        width: 1px;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+@-o-keyframes Animate-HTML70 {
+    from {
+        width: 1px;
+    }
+
+    to {
+        width: 70%
+    }
+}
+
+.c70 {
+    width: 70%;
+    animation: Animate-HTML75 4s;
+    -webkit-animation: Animate-HTML70 4s;
+    -moz-animation: Animate-HTML70 4s;
+    -o-animation: Animate-HTML70 4s;
+    background-color: #6B8;
+}
+
+@keyframes Animate-HTML80 {
+    from {
+    width: 1px;
+}
+to {
+    width: 80%}
+}@-webkit-keyframes Animate-HTML80 {
+    from {
+    width: 1px;
+}
+to {
+    width: 80%}
+}@-moz-keyframes Animate-HTML80 {
+    from {
+    width: 1px;
+}
+to {
+    width: 80%}
+}@-o-keyframes Animate-HTML80 {
+    from {
+    width: 1px;
+}
+to {
+    width: 80%}
+}
+
+.c80{
+    width: 80%;
+    animation: Animate-HTML80 4s;
+    -webkit-animation: Animate-HTML80 4s;
+    -moz-animation: Animate-HTML80 4s;
+    -o-animation: Animate-HTML80 4s;
+    background-color: #5B8;
+}
+
+
+@keyframes Animate-HTML85 {
+    from {
+    width: 1px;
+}
+to {
+    width: 85%}
+}@-webkit-keyframes Animate-HTML85 {
+    from {
+    width: 1px;
+}
+to {
+    width: 85%}
+}@-moz-keyframes Animate-HTML85 {
+    from {
+    width: 1px;
+}
+to {
+    width: 85%}
+}@-o-keyframes Animate-HTML85 {
+    from {
+    width: 1px;
+}
+to {
+    width: 85%}
+}
+.c85{
+    width: 85%;
+    animation: Animate-HTML85 4s;
+    -webkit-animation: Animate-HTML85 4s;
+    -moz-animation: Animate-HTML85 4s;
+    -o-animation: Animate-HTML85 4s;
+    background-color: #4B8;
+}
+
+@keyframes Animate-HTML90 {
+    from {
+    width: 1px;
+}
+to {
+    width: 90%}
+}@-webkit-keyframes Animate-HTML90 {
+    from {
+    width: 1px;
+}
+to {
+    width: 90%}
+}@-moz-keyframes Animate-HTML90 {
+    from {
+    width: 1px;
+}
+to {
+    width: 90%}
+}@-o-keyframes Animate-HTML90 {
+    from {
+    width: 1px;
+}
+to {
+    width: 90%}
+}
+
+.c90{
+    width: 90%;
+    animation: Animate-HTML90 4s;
+    -webkit-animation: Animate-HTML90 4s;
+    -moz-animation: Animate-HTML90 4s;
+    -o-animation: Animate-HTML90 4s;
+    background-color: #3B8;
+}
+
+
+@keyframes Animate-HTML95 {
+    from {
+    width: 1px;
+}
+to {
+    width: 95%}
+}@-webkit-keyframes Animate-HTML95 {
+    from {
+    width: 1px;
+}
+to {
+    width: 95%}
+}@-moz-keyframes Animate-HTML95 {
+    from {
+    width: 1px;
+}
+to {
+    width: 95%}
+}@-o-keyframes Animate-HTML95 {
+    from {
+    width: 1px;
+}
+to {
+    width: 95%}
+}
+
+.c95{
+    width: 95%;
+    animation: Animate-HTML95 4s;
+    -webkit-animation: Animate-HTML95 4s;
+    -moz-animation: Animate-HTML95 4s;
+    -o-animation: Animate-HTML95 4s;
+    background-color: #2B8;
+}
+.c100{
+    width: 100%;
+    background-color: #1B8;
+    border-radius: 5px;
+}
+.comp2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.conteneur-barre2{
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: grey;
+    
+}
+
+/*SECTION INTERETS*/
+.interet{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.interet img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555;
+}
+
+figcaption{
+    margin-top: 5%;
+}
+
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    a:hover{
+        color: #EA0;
+    }
+    header h1{
+        width: 80%;
+    }
+    .prez, .contact{
+        flex: 0 0 45%;
+    }
+    .prez{
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .prez a{
+        border: 2px solid transparent;
+    }
+    .prez a:hover{
+        color: #f28835;
+        background-color: #fff;
+        border: 2px solid #f28835;
+        box-shadow: 0px 0px 20px #666;
+    }
+    .exp-logo{
+        flex: 0 0 10%;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+    .interet{
+        flex: 0 1 25%;
+    }
+}
