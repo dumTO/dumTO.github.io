@@ -4,22 +4,26 @@
     
     // Get the scroll position of the page.
     var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
-    var viewportTop = $(scrollElem).scrollTop();
-    
+   // var viewportTop = $(scrollElem).scrollTop();
+    var viewportTop = window.scrollY;
     var viewportBottom = viewportTop + (document.body.clientHeight);
     
     // Get the position of the element on the page.
     var elemTop = Math.round($elem.offset().top);
     var elemBottom = elemTop + $elem.height();
-   /* console.log(viewportBottom);
+    console.log(viewportBottom);
     console.log(viewportTop);
     console.log(elemTop);
-    console.log(elemBottom);*/
+    console.log(elemBottom);
     return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
 }
 
+
+
+
 // Check if it's time to start the animation.
 function checkAnimation() {
+    
     var $elem = $('#htmlcss');
 
    
@@ -155,10 +159,12 @@ function checkAnimation() {
 
 // Capture scroll events
 $(window).scroll(function () {
-
+    
     checkAnimation();
     
 });
+
+
 
 
 

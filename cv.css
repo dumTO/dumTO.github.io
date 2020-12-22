@@ -182,12 +182,12 @@ section > div{
 .comp p{
     flex: 0 0 40%;
 }
-.conteneur-barre{
-
+.conteneur-barre {
     flex: 0 0 60%;
     border-radius: 5px;
     background-color: grey;
     border-bottom: 1px ridge grey;
+    height: 2em;
 }
 
 
@@ -247,7 +247,7 @@ to {
 }
 to {
     width: 75%}
-}@-moz-keyframes Animate-HTML75 {
+}/*@-moz-keyframes Animate-HTML75 {
     from {
     width: 1px;
 }
@@ -259,7 +259,7 @@ to {
 }
 to {
     width: 75%}
-}
+}*/
 .c75{
     width: 75%;
     
@@ -532,14 +532,24 @@ figcaption{
         border: 2px solid #f28835;
         box-shadow: 0px 0px 20px #666;
     }
-    .exp-logo{
+    .exp-logo {
         flex: 0 0 10%;
+        
+        margin-left: auto;
+       
     }
-    .exp-info, .exp-desc{
+    .exp-info, .exp-desc {
         flex: 0 0 85%;
         margin-left: auto;
+        margin-top: 0%;
+
     }
     .interet{
         flex: 0 1 25%;
+    }
+
+    img.resize {
+        max-width: 75%;
+        max-height: 75%;
     }
 }
