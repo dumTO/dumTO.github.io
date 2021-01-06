@@ -21,10 +21,10 @@
     100%  {background-position: 0 0;}
   }
 
-body{
+/*body{
     background: url("https://image.freepik.com/vecteurs-libre/fond-sombre-basse-poly_1048-7971.jpg") #4f4f4f;
     animation: font_body_animation 50s linear infinite;
-}
+}*/-
 p{
     font-size: 1em;
     line-height: 1.5em;
