@@ -64,6 +64,19 @@ function checkAnimation() {
         }
     }
 
+
+
+    var $elem3 = $('#Thymeleaf');
+
+
+    // If the animation has already been started
+    if (!$elem3.hasClass('c75')) {
+        if (isElementInViewport($elem3)) {
+            // Start the animation
+            $elem3.addClass('c75');
+        }
+    }
+
     
 
     var $elem4 = $('#C');
@@ -100,6 +113,19 @@ function checkAnimation() {
         }
     }
     var $elem7 = $('#SPRING');
+
+
+    // If the animation has already been started
+    if (!$elem7.hasClass('c70')) {
+
+        if (isElementInViewport($elem7)) {
+            // Start the animation
+
+            $elem7.addClass('c70');
+        }
+    }
+
+    var $elem7 = $('#XML');
 
 
     // If the animation has already been started
