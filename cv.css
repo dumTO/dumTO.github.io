@@ -317,7 +317,7 @@ to {
     -webkit-animation: Animate-HTML70 4s;
     -moz-animation: Animate-HTML70 4s;
     -o-animation: Animate-HTML70 4s;
-    background-color: #6B8;
+    background-color: rgb(42, 196, 50);
 }
 
 @keyframes Animate-HTML80 {
@@ -352,7 +352,7 @@ to {
     -webkit-animation: Animate-HTML80 4s;
     -moz-animation: Animate-HTML80 4s;
     -o-animation: Animate-HTML80 4s;
-    background-color: #5B8;
+    background-color: rgb(33, 194, 113);
 }
 
 
@@ -387,7 +387,42 @@ to {
     -webkit-animation: Animate-HTML85 4s;
     -moz-animation: Animate-HTML85 4s;
     -o-animation: Animate-HTML85 4s;
-    background-color: #4B8;
+    background-color: rgb(20, 187, 76);
+}
+
+@keyframes Animate-HTML60 {
+    from {
+    width: 1px;
+}
+to {
+    width: 60%}
+}@-webkit-keyframes Animate-HTML60 {
+    from {
+    width: 1px;
+}
+to {
+    width: 60%}
+}@-moz-keyframes Animate-HTML60 {
+    from {
+    width: 1px;
+}
+to {
+    width: 60%}
+}@-o-keyframes Animate-HTML60 {
+    from {
+    width: 1px;
+}
+to {
+    width: 60%}
+}
+
+.c60{
+    width: 60%;
+    animation: Animate-HTML60 4s;
+    -webkit-animation: Animate-HTML60 4s;
+    -moz-animation: Animate-HTML60 4s;
+    -o-animation: Animate-HTML60 4s;
+    background-color: rgb(131, 194, 31);
 }
 
 @keyframes Animate-HTML90 {

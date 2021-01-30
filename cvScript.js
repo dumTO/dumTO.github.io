@@ -125,6 +125,19 @@ function checkAnimation() {
         }
     }
 
+    var $elem7 = $('#Python');
+
+
+    // If the animation has already been started
+    if (!$elem7.hasClass('c60')) {
+
+        if (isElementInViewport($elem7)) {
+            // Start the animation
+
+            $elem7.addClass('c60');
+        }
+    }
+
     var $elem7 = $('#XML');
 
 
